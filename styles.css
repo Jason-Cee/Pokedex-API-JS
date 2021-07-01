@@ -26,56 +26,31 @@ body {
     #4d194d
   );
 }
+
 .header img {
   height: 80%;
-  transition: 1s ease-in-out;
-  cursor: pointer;
-}
-.header img:hover {
-  transform: rotateZ(360deg);
-  padding: 5px;
 }
 button {
   width: 10%;
-  height: 10vh;
+  height: 9vh;
   margin: 5px;
   border-radius: 10%;
   border: none;
   cursor: pointer;
   color: whitesmoke;
   background: linear-gradient(
-    #0091ad,
-    #1780a1,
-    #2e6f95,
-    #455e89,
-    #5c4d7d,
-    #723c70,
-    #892b64,
-    #a01a58,
-    #b7094c,
-    #4d194d
+    red,
+    red,
+    red,
+    red,
+    black,
+    black,
+    white,
+    white,
+    white,
+    white
   );
-  font-size: 1.5rem;
-  text-transform: capitalize;
-}
-
-button:hover {
-  font-family: fantasy;
-  cursor: -webkit-grab;
-  background: linear-gradient(
-    #4d194d,
-    #b7094c,
-    #a01a58,
-    #892b64,
-    #723c70,
-    #5c4d7d,
-    #455e89,
-    #2e6f95,
-    #1780a1,
-    #0091ad
-  );
-  color: whitesmoke;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-transform: capitalize;
 }
 
@@ -91,11 +66,11 @@ button:hover {
   text-align: center;
   flex-direction: column;
 }
-.cover {
+/* .cover {
   height: 100%;
   width: 100%;
   position: fixed;
-}
+} */
 h1 {
   font-family: cursive, sans-serif;
   color: white;
@@ -103,14 +78,81 @@ h1 {
 }
 .pokemon-info {
   display: flex;
+  color: whitesmoke;
+  background: linear-gradient(
+    #006466,
+    #065a60,
+    #0b525b,
+    #144552,
+    #1b3a4b,
+    #212f45,
+    #272640,
+    #312244,
+    #3e1f47,
+    #4d194d
+  );
+  justify-content: center;
+  flex-direction: column;
 }
 .pokemon-info img {
-  width: 270px;
-  height: 270px;
+  width: 200px;
+  height: 200px;
   transition: 1s ease-in-out;
 }
-.pokemon-info img:hover {
+
+.details {
+  width: 10%;
+  height: 10%;
+  font-size: 15px;
+  background: linear-gradient(
+    #006466,
+    #065a60,
+    #0b525b,
+    #144552,
+    #1b3a4b,
+    #212f45,
+    #272640,
+    #312244,
+    #3e1f47,
+    #4d194d
+  );
+  color: whitesmoke;
+}
+
+/* .pokemon-info img:hover {
   width: 300px;
   height: 300px;
   transform: rotateZ(1800deg);
+} */
+
+@media (max-width: 364px) {
+  .pokemon-info {
+    width: 50vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .pokemon-info img {
+    max-width: 85%;
+    max-height: 100%;
+    margin-left: 10px;
+    /* position: fixed; */
+  }
+  .cont {
+    height: 270vh;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 7vh;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .details {
+    height: 15vh;
+    width: 50vw;
+  }
 }
