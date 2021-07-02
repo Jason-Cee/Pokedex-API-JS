@@ -95,14 +95,14 @@ h1 {
   flex-direction: column;
 }
 .pokemon-info img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   transition: 1s ease-in-out;
 }
 
 .details {
   width: 10%;
-  height: 10%;
+  height: 20%;
   font-size: 15px;
   background: linear-gradient(
     #006466,
