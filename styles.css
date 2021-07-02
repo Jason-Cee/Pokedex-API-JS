@@ -128,19 +128,19 @@ h1 {
 @media (max-width: 364px) {
   .pokemon-info {
     width: 50vw;
-    height: 20vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     position: relative;
   }
   .pokemon-info img {
     max-width: 85%;
-    max-height: 100%;
+    max-height: 80%;
     margin-left: 10px;
     /* position: fixed; */
   }
   .cont {
-    height: 270vh;
+    height: 238vh;
   }
   button {
     display: flex;
@@ -149,10 +149,11 @@ h1 {
     width: 50vw;
     height: 7vh;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 17px;
   }
   .details {
     height: 15vh;
     width: 50vw;
+    /* margin-top: 10px; */
   }
 }

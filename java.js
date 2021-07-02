@@ -36,7 +36,7 @@ function getPokemonInfo(url) {
           console.log(speciesData);
           // Write data to pokemon information container
           document.querySelector(".details").innerHTML = `
-    <p>${speciesData.flavor_text_entries[0].flavor_text}</p>
+    <p>${speciesData.flavor_text_entries[1].flavor_text}</p>
     `;
         });
       document.querySelector(".pokemon-info").innerHTML = `<img src="${
